@@ -1,6 +1,3 @@
-
-## Local development
-
 ```sh
 npm install
 npm run start
