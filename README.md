@@ -16,9 +16,9 @@ Current configuration
 
 You can follow the steps:
 
-- [x] #739 Please run the following command `npm create vue@latest` from the root directory
-- [x] #739 Install de dependencies from package.json by running `npm install`. Please, add `single-spa-vue` as a dependency
-- [x] #739 Update the `main.ts` or `main.js` file with the correct configuration in order to use single spa. Example:
+- [x] Please run the following command `npm create vue@latest` from the root directory
+- [x] Install de dependencies from package.json by running `npm install`. Please, add `single-spa-vue` as a dependency
+- [x] Update the `main.ts` or `main.js` file with the correct configuration in order to use single spa. Example:
 
 ```sh
         import { createApp, h } from 'vue'
@@ -48,12 +48,12 @@ You can follow the steps:
         export const unmount = vueLifecycles.unmount
 ```
 
-- [x] #739 Launch the microfrontend by running `npm run dev`
-- [x] #739 Register the microfrontend in the root configuration where `PORT` is the port number the microfrontend is running
+- [x] Launch the microfrontend by running `npm run dev`
+- [x] Register the microfrontend in the root configuration where `PORT` is the port number the microfrontend is running
 
 ```sh
 registerApplication({
-  name: "microfrontend2",
+  name: "microfrontend_name",
   app: () =>
     import(
       /* webpackIgnore: true */
