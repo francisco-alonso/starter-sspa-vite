@@ -1,6 +1,6 @@
 <template>
   <img id="logo" alt="Vue logo" v-bind:src="getImageUrl('logo')" />
-  <HelloWorld msg="Hello Vue 3.0 + Vite in SCHENEIDER" />
+  <HelloWorld msg="SCHNEIDER MICROFRONTEND 1" />
 </template>
 
 <script>

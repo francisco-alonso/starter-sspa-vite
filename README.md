@@ -7,3 +7,7 @@ Please make sure you are using the correct node version by doing the following
 ```sh
 nvm use
 ```
+
+Current configuration
+
+![Alt Text](example.png)

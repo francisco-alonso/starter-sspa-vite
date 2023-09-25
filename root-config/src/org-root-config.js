@@ -10,15 +10,15 @@ registerApplication({
   activeWhen: ["/"],
 });
 
-// registerApplication({
-//   name: "microfrontend2",
-//   app: () =>
-//     import(
-//       /* webpackIgnore: true */
-//       "http://localhost:3001/src/main.ts"
-//     ),
-//   activeWhen: ["/"],
-// });
+registerApplication({
+  name: "microfrontend2",
+  app: () =>
+    import(
+      /* webpackIgnore: true */
+      "http://localhost:3001/src/main.ts"
+    ),
+  activeWhen: ["/"],
+});
 
 start({
   urlRerouteOnly: true,
