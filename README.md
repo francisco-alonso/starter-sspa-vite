@@ -57,7 +57,7 @@ registerApplication({
   app: () =>
     import(
       /* webpackIgnore: true */
-      "http://localhost:[PORT]/src/main.ts"
+      "http://localhost:[PORT]/src/main.(js,ts)"
     ),
   activeWhen: ["/"],
 });
