@@ -16,8 +16,8 @@ Current configuration
 
 You can follow the steps:
 
-- [x] Please run the following command `npm create vue@latest` from the root directory
-- [x] Install de dependencies from package.json by running `npm install`. Please, add `single-spa-vue` as a dependency
+- [x] In order to create the microfrontend, please run the following command `npm create vue@latest` from the root directory.
+- [x] Install de dependencies from package.json by running `npm install`. Please, add `single-spa-vue` as a dependency.
 - [x] Update the `main.ts` or `main.js` file with the correct configuration in order to use single spa. Example:
 
 ```sh
