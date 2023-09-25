@@ -1,4 +1,4 @@
-# Starter pack for Vite and Vue3
+# Starter pack for Vite, Vue3 and Single SPA
 
 The `microfrontend1` (JS) and `microfrontend2` (TS) are exposed on port `3000`/`3001`, respectively. You need to start each micro frontend following the instructions in the each `README`. Then, you can run the root config in order to expose both ports and consume the microfrontend from port `9000`
 
@@ -52,13 +52,13 @@ You can follow the steps:
 - [x] Register the microfrontend in the root configuration where `PORT` is the port number the microfrontend is running
 
 ```sh
-registerApplication({
-  name: "microfrontend_name",
-  app: () =>
-    import(
-      /* webpackIgnore: true */
-      "http://localhost:[PORT]/src/main.(js,ts)"
-    ),
-  activeWhen: ["/"],
-});
+        registerApplication({
+          name: "microfrontend_name",
+          app: () =>
+            import(
+              /* webpackIgnore: true */
+              "http://localhost:[PORT]/src/main.(js,ts)"
+            ),
+          activeWhen: ["/"],
+        });
 ```
